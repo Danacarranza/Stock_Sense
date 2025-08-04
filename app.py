@@ -16,8 +16,7 @@ from sklearn.linear_model import LinearRegression
 import numpy as np
 
 # ─── CONFIG ─────────────────────────────────────────────────────────────
-load_dotenv()
-GROQ_KEY     = os.getenv("GROQ_API_KEY", "")
+GROQ_KEY     = os.environ.get("GROQ_API_KEY", "")  # ✅ Lee directo de Docker ENV
 CAMERA_IDX   = 1
 MODEL_PATH   = "yolov8n.pt"
 LOGO_PATH    = "logo_stocksense.png"
@@ -25,6 +24,7 @@ COUNT_FILE   = "counts.json"
 HIST_FILE    = "inventory_history.csv"
 FRAME_FILE   = "last_frame.jpg"
 TS_FILE      = "timestamp.txt"
+
 
 # ─── PAGE SETUP ────────────────────────────────────────────────────────
 st.set_page_config("StockSense AI Dashboard", layout="wide")

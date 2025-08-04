@@ -1,0 +1,10 @@
+.venv/
+*.pt
+*.jpg
+*.jpeg
+*.csv
+last_frame.jpg
+inventory_history.csv
+timestamp.txt
+.env
+.streamlit/secrets.toml
