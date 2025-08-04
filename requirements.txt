@@ -1,0 +1,15 @@
+streamlit
+ultralytics
+python-dotenv
+requests
+fpdf
+matplotlib
+pandas
+pillow
+streamlit-autorefresh
+scikit-learn
+plotly
+prophet
+reportlab
+groq
+
